@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator - Free Online QR Code Maker</title>
+    <meta name="description" content="Free online QR code generator. Create QR codes for URLs, text, email, and more. Download as PNG instantly.">
+    <meta name="keywords" content="qr code generator free, qr code maker, create qr code online, qr code creator">
+    <link rel="canonical" href="https://jko-yohan.github.io/qr-code-generator/">
+    <meta property="og:title" content="QR Code Generator - Free Online QR Code Maker">
+    <meta property="og:description" content="Free online QR code generator. Create QR codes instantly and download as PNG.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jko-yohan.github.io/qr-code-generator/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4754582635962628" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>QR Code Generator</h1>
+        <p class="subtitle">Create QR codes for free - no signup required</p>
+    </header>
+    <main>
+        <div class="generator-container">
+            <div class="input-panel">
+                <label for="qr-input">Enter text or URL</label>
+                <textarea id="qr-input" placeholder="https://example.com" spellcheck="false"></textarea>
+                <div class="options">
+                    <div class="option-group">
+                        <label for="qr-size">Size</label>
+                        <select id="qr-size">
+                            <option value="200">200 x 200</option>
+                            <option value="300" selected>300 x 300</option>
+                            <option value="400">400 x 400</option>
+                            <option value="500">500 x 500</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label for="qr-fg">Foreground</label>
+                        <input type="color" id="qr-fg" value="#000000">
+                    </div>
+                    <div class="option-group">
+                        <label for="qr-bg">Background</label>
+                        <input type="color" id="qr-bg" value="#ffffff">
+                    </div>
+                </div>
+                <button id="btn-generate" class="btn btn-primary">Generate QR Code</button>
+            </div>
+            <div class="output-panel">
+                <div id="qr-output" class="qr-display">
+                    <p class="placeholder-text">Your QR code will appear here</p>
+                </div>
+                <button id="btn-download" class="btn" disabled>Download PNG</button>
+            </div>
+        </div>
+
+        <section class="info-section">
+            <h2>Free QR Code Generator</h2>
+            <p>Generate QR codes instantly for any text, URL, email address, or phone number. Our QR code generator runs entirely in your browser - your data never leaves your device. Customize the size and colors of your QR code, then download it as a high-quality PNG image.</p>
+            <h2>Features</h2>
+            <ul>
+                <li>Generate QR codes for URLs, text, email, WiFi, and more</li>
+                <li>Customize size, foreground and background colors</li>
+                <li>Download as high-quality PNG image</li>
+                <li>100% free, no signup or watermark</li>
+                <li>Works offline - all processing in your browser</li>
+            </ul>
+        </section>
+
+        <div class="ad-placeholder">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4754582635962628"
+                 data-ad-slot=""
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </main>
+    <footer>
+        <p>All processing runs locally in your browser. No data is sent to any server.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
